@@ -17,35 +17,35 @@ export default function Home() {
 
       <main className={`flex flex-col`}>
 
-        <div className={`py-32 px-32 flex flex-row gap-8`} style={{ display: 'flex', flexDirection: 'row', backgroundImage: 'url(/images/cloudy-background.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: '100vw' }}>
+        <div className='banner'>
           <div>
             <h1 className={`font-PoppinsBold text-6xl mb-4 text-white`}>What's the Weather Like Today?</h1>
             <p className={`text-white text-2xl`}>With our Pocket Forecast weather app, let Pikachu, or hundreds of other Pokemon tell you!</p>
             <button className={`text-white py-5 px-8 rounded-xl my-10 text-xl`} style={{backgroundColor: '#006a90'}}>Check It Out!</button>
           </div>
           <div>
-            <Spline scene="https://prod.spline.design/Q76bwQTMDOdRSF5Y/scene.splinecode" style={{paddingRight: '2em', marginLeft: '2em'}}/>
+            <Spline className='pika' scene="https://prod.spline.design/Q76bwQTMDOdRSF5Y/scene.splinecode" style={{paddingRight: '2em', marginLeft: '2em'}}/>
           </div>
         </div>
 
-        <div className={`my-20 flex flex-row justify-center gap-16`}>
+        <div className='cards'>
           <Card1 />
           <Card2 />
           <Card3 />
         </div>
 
-        <div style={{display: 'flex', flexDirection: 'row', backgroundImage: 'url(/images/thunder.png)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: '100vw', color: 'white', padding: '6em 10em', gap: '3em', alignItems: 'center'}}>
-        <Spline scene="https://prod.spline.design/A7dSn13xI-ZrcYh8/scene.splinecode" />
+        <div className='info-banner'>
+        <Spline className='question-mark' style={{width: '20vw'}} scene="https://prod.spline.design/A7dSn13xI-ZrcYh8/scene.splinecode" />
           <div>
           <h1 className={`font-PoppinsBold text-4xl mb-4`}>What Pokemon will you Meet?</h1>
           <p>Is it rainy? Is it snowing? Depending on the weather, you'll have the chance of encountering different types of Pokemon! If it's raining, maybe you'll run into some water types, like Squirtle, Vaporeon, Psyduck, or more! If it's a thunderstorm, maybe you can run into electric types like Mareep, Luxray, Emolga, or more!</p>
           </div>
         </div>
 
-        <div className={`flex flex-col mx-36 my-20 rounded-xl py-20 justify-center items-center gap-3 text-white`} style={{backgroundColor: '#006a90'}}>
+        <div className='newsletter'>
           <h1 className={`text-3xl font-PoppinsBold`}>Subscribe to Our Newsletter</h1>
           <p>Stay connected and updated on new future updates.</p>
-          <div className={`flex flex-row mt-4 gap-2`}>
+          <div className='sign-up'>
             <input className={`py-2 px-4 rounded-xl`} placeholder='Your Email Address' />
             <button className={`py-2 px-4 rounded-xl bg-black`}>Submit</button>
           </div>
